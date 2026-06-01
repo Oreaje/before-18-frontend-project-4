@@ -1,0 +1,288 @@
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400; /* default regular weight */
+}
+
+main {
+  width: 100%;
+  max-width: 480px; 
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+button {
+  width: 240px;
+   box-sizing: border-box;
+  color: white;
+  border: none;
+  border-radius: 29px;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+p{
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+    text-align: center;  
+}
+h1, h2, h3{
+    color:hsl(210, 10%, 33%);
+ font-weight: 600;
+ text-align: center;
+}
+h2{
+    margin-top: 80px;   
+}
+footer{
+  background-color: #f2f2f2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   
+}
+#work{
+    margin-top: 20px;
+}
+#links ul {
+  list-style: none;   /* removes bullets */
+  padding: 0;
+  margin: 0;
+ 
+}
+
+#links nav{
+  margin: 8px 0; 
+   font-size: 16px;
+   padding: 10px;     /* spacing between links */
+}
+
+#links a,
+#links a:visited,
+#links a:hover,
+#links a:active {
+  text-decoration: none !important; /* removes underline */
+  color: hsl(210, 10%, 33%);        /* your chosen text color */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+#links a:hover {
+  color: hsl(171, 66%, 44%); /* hover highlight */
+}
+#socials img {
+  transition: all 0.3s ease;
+}
+
+#socials img:hover {
+  transform: scale(1.1);
+  filter: brightness(0) saturate(100%) invert(61%) sepia(24%) saturate(1037%) hue-rotate(122deg) brightness(93%) contrast(89%);
+}
+
+#logo{
+  margin: 60px;
+  width: 40%;
+
+
+}
+#socials{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+
+}
+#name{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.attribution{
+  
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  
+
+}
+
+.buttons{
+  display: flex;
+  gap: 20px;
+   flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.green{
+      background-color: hsl(171, 66%, 44%);
+}
+
+.green:hover{
+  background-color: hsla(171, 66%, 44%, 0.7);
+}
+
+
+.blue{
+    
+      background-color: hsl(233, 100%, 69%) ;
+}
+.blue:hover{
+    
+      background-color: hsla(233, 100%, 69%, 0.7) ;
+}
+.features-text{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features-section{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features-grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-text1{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-icons{
+  margin-top:80px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap : 50px;
+}
+.computer{
+    
+    margin: 50px 0;
+
+}
+@media screen and (min-width: 768px) {
+
+main {
+ width: 100%;
+  max-width: 1400px; /* keeps text readable on larger screens */
+}
+#logo{
+  margin: 50px;
+  width: 120px;
+  height: auto;
+}
+#links nav {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* 3 columns */
+  grid-template-rows: auto auto;     /* 3 rows */
+  gap: 0.75rem 2rem;
+  justify-content: center;
+}
+/* Social icons row */
+#socials {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Attribution row */
+#name {
+  margin-top: 2rem;        /* push attribution down */
+  font-size: 0.8rem;
+  text-align: center;
+  color: #555;
+}
+#clip{
+  margin-top:100px;
+}
+.buttons{
+   flex-direction: row;
+
+}
+.features {
+
+  display: flex;              /* enables flexbox */
+  align-items: center;        /* vertically align items */
+  justify-content: space-between; /* space between image and text */
+
+}
+
+.features img.computer {
+  flex: 1;                    /* take equal space */
+  max-width: 50%;            /* responsive scaling */
+}
+
+.features-text {
+  flex: 1;                    /* take equal space */
+  padding: 1rem;
+  align-items: flex-start;
+  margin: 3rem;              /* spacing around text */
+}
+.features-text p{                 /* take equal space */
+ text-align: left; 
+ 
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 features across */
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.features-text1 img {
+  margin-bottom: 1rem;
+}
+.features-icons {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  flex-direction: row;
+  
+}
+.features-icons img {
+  max-height: 40px;
+  object-fit: contain;
+}
+
+footer.attribution {
+  display: flex;
+  flex-direction: column;   /* stack rows vertically */
+  align-items: center;
+  padding: 2rem;
+  background-color: #f2f2f2;
+}
+.footer {
+  display: flex;
+  justify-content: space-between; /* logo left, links center, socials right */
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+}
+/* Place each link in the right cell */
+.faqs    { grid-column: 1; grid-row: 1; }
+.contact { grid-column: 1; grid-row: 2; }
+
+.privacy { grid-column: 2; grid-row: 1; }
+.press   { grid-column: 2; grid-row: 2; }
+
+.install { grid-column: 3; grid-row: 1; }
+
+}
