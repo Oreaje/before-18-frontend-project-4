@@ -7,7 +7,7 @@ main {
   width: 100%;
   max-width: 480px; 
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,18 +48,19 @@ footer{
 #work{
     margin-top: 20px;
 }
-#links ul {
-  list-style: none;   /* removes bullets */
-  padding: 0;
-  margin: 0;
- 
-}
+
 
 #links nav{
   margin: 8px 0; 
    font-size: 16px;
-   padding: 10px;     /* spacing between links */
-}
+   padding: 10px;
+display: flex;
+justify-content: center; 
+align-items: center; 
+flex-direction: column; 
+gap: 20px; 
+  }
+
 
 #links a,
 #links a:visited,
@@ -101,20 +102,20 @@ footer{
   display: flex;
   gap: 5px;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 
 
-.attribution{
+footer.attribution{
   
-    padding: 20px;
+    padding: 2px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-  
+    width: 100%;
 
 }
 
@@ -175,8 +176,8 @@ footer{
   gap : 50px;
 }
 .computer{
-    
-    margin: 50px 0;
+  width: 100%;
+  height: auto;
 
 }
 @media screen and (min-width: 768px) {
@@ -263,6 +264,8 @@ main {
 }
 
 footer.attribution {
+  width: 100%;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;   /* stack rows vertically */
   align-items: center;
