@@ -254,7 +254,7 @@ main {
 .features-icons {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 30px;
   flex-direction: row;
   
 }
